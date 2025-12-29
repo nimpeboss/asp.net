@@ -1,0 +1,11 @@
+@page
+@model TaskForge.Pages.Tasks.CreateModel
+
+<h1>Create Task</h1>
+
+<form method="post">
+    <input asp-for="TaskItem.Title" placeholder="Task title" />
+    <button type="submit">Save</button>
+</form>
+
+<a asp-page="Index">Back</a>

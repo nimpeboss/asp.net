@@ -1,0 +1,15 @@
+@page "{id:int}"
+@model TaskForge.Pages.Tasks.EditModel
+
+<h1>Edit Task</h1>
+
+<form method="post">
+    <input asp-for="TaskItem.Title" />
+    <label>
+        <input asp-for="TaskItem.IsCompleted" />
+        Completed
+    </label>
+    <button type="submit">Save</button>
+</form>
+
+<a asp-page="Index">Back</a>
